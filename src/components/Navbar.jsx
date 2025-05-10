@@ -25,10 +25,10 @@ const Navbar = () => {
           </div>
           
           <div className="hidden md:flex md:items-center md:space-x-4">
-            <Link to="/" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/') ? 'text-primary' : 'text-surface-700 dark:text-surface-300 hover:text-surface-900 dark:hover:text-surface-100'}`}>
+            <Link to="/" className={`px-3 py-2 rounded-md text-sm font-medium cursor-pointer relative z-20 ${isActive('/') ? 'text-primary' : 'text-surface-700 dark:text-surface-300 hover:text-surface-900 dark:hover:text-surface-100'}`}>
               Home
             </Link>
-            <Link to="/upload-history" className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/upload-history') ? 'text-primary' : 'text-surface-700 dark:text-surface-300 hover:text-surface-900 dark:hover:text-surface-100'}`}>
+            <Link to="/upload-history" className={`px-3 py-2 rounded-md text-sm font-medium cursor-pointer relative z-20 ${isActive('/upload-history') ? 'text-primary' : 'text-surface-700 dark:text-surface-300 hover:text-surface-900 dark:hover:text-surface-100'}`}>
               Upload History
             </Link>
           </div>
@@ -43,8 +43,8 @@ const Navbar = () => {
       
       {isOpen && (
         <div className="md:hidden bg-white dark:bg-surface-800 shadow-md">
-          <Link to="/" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/') ? 'text-primary' : 'text-surface-700 dark:text-surface-300 hover:text-surface-900 dark:hover:text-surface-100'}`} onClick={() => setIsOpen(false)}>Home</Link>
-          <Link to="/upload-history" className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/upload-history') ? 'text-primary' : 'text-surface-700 dark:text-surface-300 hover:text-surface-900 dark:hover:text-surface-100'}`} onClick={() => setIsOpen(false)}>Upload History</Link>
+          <Link to="/" className={`block px-3 py-2 rounded-md text-base font-medium cursor-pointer relative z-20 ${isActive('/') ? 'text-primary' : 'text-surface-700 dark:text-surface-300 hover:text-surface-900 dark:hover:text-surface-100'}`} onClick={() => setIsOpen(false)}>Home</Link>
+          <Link to="/upload-history" className={`block px-3 py-2 rounded-md text-base font-medium cursor-pointer relative z-20 ${isActive('/upload-history') ? 'text-primary' : 'text-surface-700 dark:text-surface-300 hover:text-surface-900 dark:hover:text-surface-100'}`} onClick={() => setIsOpen(false)}>Upload History</Link>
         </div>
       )}
     </nav>
