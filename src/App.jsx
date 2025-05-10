@@ -8,6 +8,7 @@ import UploadHistory from './pages/UploadHistory';
 import NotFound from './pages/NotFound';
 import getIcon from './utils/iconUtils';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -29,7 +30,7 @@ function App() {
   }, [darkMode]);
 
   return (
-    <div className="min-h-screen transition-colors duration-300">
+    <div className="min-h-screen transition-colors duration-300 flex flex-col">
       <button 
         onClick={() => setDarkMode(!darkMode)}
         className="fixed z-10 p-2.5 rounded-full bottom-6 right-6 bg-surface-200 dark:bg-surface-700 text-surface-800 dark:text-surface-200 shadow-lg hover:bg-surface-300 dark:hover:bg-surface-600 transition-all"
@@ -39,14 +40,16 @@ function App() {
       </button>
       
       <Navbar />
-      
-      <AnimatePresence mode="wait">
+     
+      <main className="flex-grow pt-16"> {/* Add padding top to account for fixed navbar */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/upload-history" element={<UploadHistory />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </AnimatePresence>
+      </main>
+      
+      <Footer />
       
       <ToastContainer
         position="top-right"
