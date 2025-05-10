@@ -55,7 +55,7 @@ const Home = () => {
           <header className="flex items-center justify-between py-4 mb-12 md:mb-16">
             <div className="flex items-center gap-2">
               <LogoIcon className="w-8 h-8 text-primary" />
-              <span className="text-xl font-bold">DropWave</span>
+              <span className="text-xl font-bold">FileZilla</span>
             </div>
           </header>
           
@@ -71,7 +71,7 @@ const Home = () => {
                 Share files <span className="gradient-text">securely</span> and <span className="gradient-text">efficiently</span>
               </h1>
               <p className="text-lg md:text-xl text-surface-700 dark:text-surface-300 max-w-lg">
-                Upload, organize, and share your files with confidence using DropWave's intuitive platform.
+                Upload, organize, and share your files with confidence using FileZilla's intuitive platform.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mt-4">
                 <button 
@@ -95,7 +95,7 @@ const Home = () => {
                   <div className="w-full h-full rounded-2xl bg-white dark:bg-surface-800 overflow-hidden">
                     <img 
                       src="https://burst.shopifycdn.com/photos/laptop-from-above.jpg?width=1000&format=pjpg&exif=0&iptc=0" 
-                      alt="DropWave in action" 
+                      alt="FileZilla in action" 
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -208,10 +208,10 @@ const Home = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center gap-2 mb-4 md:mb-0">
               <LogoIcon className="w-6 h-6 text-primary" />
-              <span className="text-lg font-bold">DropWave</span>
+              <span className="text-lg font-bold">FileZilla</span>
             </div>
             <p className="text-surface-600 dark:text-surface-400 text-sm">
-              © {new Date().getFullYear()} DropWave. All rights reserved.
+              © {new Date().getFullYear()} FileZilla. All rights reserved.
             </p>
           </div>
         </div>

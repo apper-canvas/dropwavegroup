@@ -19,10 +19,10 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <Link to="/" className="flex items-center">
               <UploadCloud className="h-8 w-8 text-primary" />
-              <span className="ml-2 text-xl font-bold text-surface-900 dark:text-surface-100">DropWave</span>
+              <span className="ml-2 text-xl font-bold text-surface-900 dark:text-surface-100">FileZilla</span>
             </Link>
             <p className="mt-4 text-surface-600 dark:text-surface-400 text-sm max-w-md">
-              DropWave is a powerful file sharing platform designed to make uploading, managing, and sharing files simple and secure.
+              FileZilla is a powerful file sharing platform designed to make uploading, managing, and sharing files simple and secure.
             </p>
           </div>
           
@@ -81,7 +81,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="mt-12 pt-8 border-t border-surface-200 dark:border-surface-700 text-center text-surface-600 dark:text-surface-400 text-sm">
+          <p>© {currentYear} FileZilla. All rights reserved.</p>
           <p>© {currentYear} DropWave. All rights reserved.</p>
         </div>
       </div>
