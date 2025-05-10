@@ -32,11 +32,11 @@ export default {
         },
         accent: '#e879f9',
         surface: {
-          50: '#f8fafc',   // Lightest
-          100: '#f1f5f9',
-          200: '#e2e8f0',
-          300: '#cbd5e1',
-          400: '#94a3b8',  // Added
+          50: '#ffffff',   // White
+          100: '#f8fafc',  // Lightest slate
+          200: '#f1f5f9',  // Very light slate
+          300: '#e2e8f0',  // Light slate
+          400: '#94a3b8',  // Medium slate
           500: '#64748b',  // Added
           600: '#475569',  // Added
           700: '#312e81',  // Dark purple
