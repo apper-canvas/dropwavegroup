@@ -9,6 +9,7 @@ const Navbar = () => {
   const UploadCloud = getIcon('UploadCloud');
   const History = getIcon('History');
   const Menu = getIcon('Menu');
+  const Folder = getIcon('Folder');
   const X = getIcon('X');
 
   const isActive = (path) => location.pathname === path;
@@ -31,6 +32,9 @@ const Navbar = () => {
             <Link to="/upload-history" className={`px-3 py-2 rounded-md text-sm font-medium cursor-pointer relative z-20 ${isActive('/upload-history') ? 'text-primary' : 'text-surface-700 dark:text-surface-300 hover:text-surface-900 dark:hover:text-surface-100'}`}>
               Upload History
             </Link>
+            <Link to="/folders" className={`px-3 py-2 rounded-md text-sm font-medium cursor-pointer relative z-20 ${location.pathname.startsWith('/folders') ? 'text-primary' : 'text-surface-700 dark:text-surface-300 hover:text-surface-900 dark:hover:text-surface-100'}`}>
+              Folders
+            </Link>
           </div>
           
           <div className="md:hidden flex items-center">
@@ -45,6 +49,7 @@ const Navbar = () => {
         <div className="md:hidden bg-white dark:bg-surface-800 shadow-md">
           <Link to="/" className={`block px-3 py-2 rounded-md text-base font-medium cursor-pointer relative z-20 ${isActive('/') ? 'text-primary' : 'text-surface-700 dark:text-surface-300 hover:text-surface-900 dark:hover:text-surface-100'}`} onClick={() => setIsOpen(false)}>Home</Link>
           <Link to="/upload-history" className={`block px-3 py-2 rounded-md text-base font-medium cursor-pointer relative z-20 ${isActive('/upload-history') ? 'text-primary' : 'text-surface-700 dark:text-surface-300 hover:text-surface-900 dark:hover:text-surface-100'}`} onClick={() => setIsOpen(false)}>Upload History</Link>
+          <Link to="/folders" className={`block px-3 py-2 rounded-md text-base font-medium cursor-pointer relative z-20 ${location.pathname.startsWith('/folders') ? 'text-primary' : 'text-surface-700 dark:text-surface-300 hover:text-surface-900 dark:hover:text-surface-100'}`} onClick={() => setIsOpen(false)}>Folders</Link>
         </div>
       )}
     </nav>

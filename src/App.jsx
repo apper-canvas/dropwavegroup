@@ -6,6 +6,7 @@ import { AnimatePresence } from 'framer-motion';
 import Home from './pages/Home';
 import UploadHistory from './pages/UploadHistory';
 import NotFound from './pages/NotFound';
+import FolderExplorer from './pages/FolderExplorer';
 import getIcon from './utils/iconUtils';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -45,6 +46,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/upload-history" element={<UploadHistory />} />
+          <Route path="/folders" element={<FolderExplorer />} />
+          <Route path="/folders/:folderPath*" element={<FolderExplorer />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
