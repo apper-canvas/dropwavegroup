@@ -81,10 +81,10 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        
+        <div className="mt-8 border-t border-surface-200 dark:border-surface-700 pt-8 text-center text-sm text-surface-600 dark:text-surface-400">
           <p>© {currentYear} FileZilla. All rights reserved.</p>
-          <p>© {currentYear} DropWave. All rights reserved.</p>
         </div>
-      </div>
     </footer>
   );
 };
