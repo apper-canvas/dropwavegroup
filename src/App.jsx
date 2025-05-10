@@ -4,8 +4,10 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { AnimatePresence } from 'framer-motion';
 import Home from './pages/Home';
+import UploadHistory from './pages/UploadHistory';
 import NotFound from './pages/NotFound';
 import getIcon from './utils/iconUtils';
+import Navbar from './components/Navbar';
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -36,9 +38,12 @@ function App() {
         {darkMode ? <Sun size={20} /> : <Moon size={20} />}
       </button>
       
+      <Navbar />
+      
       <AnimatePresence mode="wait">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/upload-history" element={<UploadHistory />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </AnimatePresence>
